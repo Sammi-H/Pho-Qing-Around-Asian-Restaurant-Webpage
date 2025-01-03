@@ -1,0 +1,336 @@
+/* Första och andra raden */
+#main {
+  padding-top: .7rem;
+  padding-bottom: 3rem;
+}
+
+.row-1,
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr; /* Två kolumner: Text och Bild */
+  gap: 1.2rem; /* Mellanrum mellan kolumnerna */
+  margin-block: 3rem;
+  align-items: stretch;
+}
+
+/* Bilder */
+.row-1 img,
+.row-2 img {
+  width: 100%; /* Responsiva bilder */
+  height: auto;
+  border-radius: 0.7rem; /* Rundar hörnen */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Snygg skugga */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth övergång vid hover */
+}
+
+.row-1 img:hover, .row-2 img:hover {
+  transform: scale(1.05); /* Öka storleken något vid hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Förstärk skuggan vid hover */
+}
+
+/* Texten */
+.row-1 p,
+.row-2 p {
+  margin-inline: auto; /* Centrerar textblocket horisontellt */
+  text-align: center; /* Centrera texten inuti blocket */
+  line-height: 1.5; /* Förbättrad läsbarhet */
+  font-size: 1.6rem; /* Standard textstorlek */
+  padding: 1.2rem; /* Utrymme runt texten */
+  background-color: #f9f9f9; /* Lätt bakgrundsfärg (valfritt) */
+  border-radius: 0.8rem; /* Rundar hörnen på textblocket */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Liten skugga för textblocket */
+  display: flex; /* Gör textblocket flexibelt */
+  align-items: center; /* Centrerar texten vertikalt */
+  height: 100%; /* Säkerställer att kortet fyller hela sin kolumn */
+}
+
+/* Justera container om det behövs för specifik rad */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Två kolumner för att placera text och bild */
+  gap: 1rem; /* Mellanrum mellan kolumner */
+}
+
+
+
+/* Row-3 layout */
+.row-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Två lika stora kolumner i desktopvy */
+  gap: 1.2rem; /* Mellanrum mellan kolumner */
+  align-items: stretch; /* Sträck ut elementen till samma höjd */
+  margin: 1.2rem auto; /* Centrerar sektionen och ger avstånd ovan/nedan */
+  padding: 0 1.2rem; /* Sidomarginaler */
+}
+
+/* Kontaktuppgifter */
+.contact-info {
+  background-color: #f9f9f9; /* Ljus bakgrund */
+  padding: 2rem; /* Utrymme runt texten */
+  border-radius: 10px; /* Rundade hörn */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Liten skugga */
+  text-align: center; /* Centrerar innehållet */
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: .02rem;
+  display: flex; /* Flexlayout */
+  flex-direction: column; /* Lägg innehåll i kolumn */
+  justify-content: center; /* Centrerar vertikalt */
+}
+
+.contact-info h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.contact-info button {
+  margin-top: 1rem; /* Utrymme ovanför knappen */
+  padding: 0.8rem 1.2rem; /* Knappens inre utrymme */
+  background-color: #ff5e57; 
+  color: #fff; /* Vit text */
+  border: none;
+  border-radius: 0.4rem; /* Rundade hörn */
+  cursor: pointer;
+  font-size: 1.2rem; /* Standardstorlek på texten */
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+.contact-info button:hover {
+  background-color: #b7251e; /* Mörkare blå vid hover */
+}
+
+/* FAQ Accordion */
+.faq-accordion {
+  background-color: #ffffff; /* Neutral bakgrund */
+  padding: 1.2rem;
+  border: 1px solid #ddd; /* Tunn ram */
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Liten skugga */
+}
+
+.faq-accordion h2 {
+  margin-bottom: 1.2rem; /* Mellanrum under rubriken */
+  font-size: 1.4rem;
+}
+
+.faq-accordion details {
+  margin-bottom: 1rem; /* Mellanrum mellan varje fråga */
+  font-size: 1.2rem;
+}
+
+.faq-accordion summary {
+  cursor: pointer;
+  font-weight: 550; /* Gör frågan fetstilad */
+  letter-spacing: .02rem;
+  margin-bottom: 0.4rem;
+}
+
+.faq-accordion p {
+  margin: 0; /* Ta bort extra marginaler */
+  padding: 0.3rem 0; /* Lite utrymme runt svaret */
+  line-height: 1.5; /* Förbättrad läsbarhet */
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  
+
+
+  .row-3 {
+    grid-template-columns: 1fr; /* En kolumn för mobil- och tabletvy */
+  }
+
+  .row-3 div {
+    margin-bottom: 1.2rem; /* Mellanrum mellan sektionerna */
+  }
+}
+
+/* Row-1 och Row-2 layout för mobil och tablet */
+@media (max-width: 768px) {
+  /* Se till att varje sektion (row-1 och row-2) visas som en kolumn */
+  .row-1, .row-2 {
+    display: grid;
+    grid-template-columns: 1fr; /* En kolumn istället för två */
+    gap: 1rem; /* Mellanrum mellan elementen */
+  }
+
+  /* Justering av bilder i row-1 och row-2 */
+  .row-1 img, .row-2 img {
+    border-radius: 0.5rem; /* Justera rundade hörn på bilder */
+    width: 100%; /* Gör bilderna responsiva */
+  }
+
+  /* Justera texten för att centreras i små enheter */
+  .row-1 p, .row-2 p {
+    margin-inline: auto; /* Centrerar textblocket horisontellt */
+    font-size: 1.2rem; /* Minska textstorleken för små skärmar */
+    padding: 1rem; /* Minska padding för små skärmar */
+  }
+  
+  /* Se till att container blir en enkel kolumn på mobil och tablet */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr; /* Gör containern till en enkel kolumn */
+    gap: 1.2rem; /* Mellanrum mellan elementen */
+  }
+}
+
+@media (max-width: 992px) {
+  /* Se till att varje sektion (row-1 och row-2) visas som en kolumn */
+  .row-1, .row-2 {
+    display: grid;
+    grid-template-columns: 1fr; /* En kolumn istället för två */
+    gap: 1rem; /* Mellanrum mellan elementen */
+  }
+
+  /* Justering av bilder i row-1 och row-2 */
+  .row-1 img, .row-2 img {
+    border-radius: 0.5rem; /* Justera rundade hörn på bilder */
+    width: 100%; /* Gör bilderna responsiva */
+  }
+
+  /* Justera texten för att centreras i små enheter */
+  .row-1 p, .row-2 p {
+    margin-inline: auto; /* Centrerar textblocket horisontellt */
+    font-size: 1.2rem; /* Minska textstorleken för små skärmar */
+    padding: 1rem; /* Minska padding för små skärmar */
+  }
+  
+  /* Se till att container blir en enkel kolumn på mobil och tablet */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr; /* Gör containern till en enkel kolumn */
+    gap: 1.2rem; /* Mellanrum mellan elementen */
+  }
+}
+
+
+
+
+
+/* Footer */
+
+.footer {
+  background-color: #c20a0f; /* Röd bakgrund */
+  color: white; /* Vit text */
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.footer-info {
+  font-size: 1rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff5e57; /* Ljusröd för hover */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 1rem;
+  }
+
+  .footer-links a {
+    margin: 0.5rem 0;
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 700px) {
+  .menu-btn {
+    display: block; 
+    position: absolute;
+    right: 0;
+    left: 10;
+    z-index: 1000;
+    top: 25%;
+    
+  }
+
+  #main-menu {
+    position: relative;
+    top: 5px;
+    right: 0;
+    width: 100%;
+    background-color: #c20a0f; 
+    display: flex;
+    display: none; 
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+        
+  }
+
+  #main-menu {
+    display: none; 
+    list-style: none;
+    padding: 0;
+    
+}
+
+.main-nav a {
+  margin-top: 0.5em;
+}
+
+.main-nav a, p{
+  font-size: 1em !important;
+  display: flex;
+  
+  
+}
+
+
+
+#main-menu.show {
+  display: block; 
+}
+
+.menu-btn {
+  display: block; 
+
+}
+}
+
+@media (min-width: 700px) {
+  .menu-btn {
+    display: none; 
+  }
+
+  #main-menu {
+    display: flex; 
+    justify-content: space-between;
+  }
+}

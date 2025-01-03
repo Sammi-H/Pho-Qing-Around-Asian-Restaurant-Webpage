@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Utility.css">
+  <link rel="stylesheet" href="Home.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pho-Qing Around - Authentic Vietnamese Cuisine in Gothenburg</title>
+  <meta name="description" content="Welcome to Pho-Qing Around, a Vietnamese restaurant in Gothenburg offering authentic flavors and a welcoming atmosphere. Explore our delicious menu and special dishes of the week!">
+  <link rel="canonical" href="https://www.phoqingaround.se/Home.html">
+</head>
+
+<body>
+  <nav class="main-nav" aria-label="main navigation">
+    <div class="container">
+      <a href="/Home.html" aria-label="Homepage">
+        <p>Pho-Qing Around</p>
+      </a>
+      <button class="menu-btn" aria-controls="main-menu" aria-expanded="false" aria-label="toggle navigation">
+        <img src="/images/icons/hamburger.svg" alt="main-menu">
+      </button>
+
+      <ul id="main-menu" role="menu">
+        <li role="menuitem">
+          <a href="/Meny.html" class="meny-link">Meny</a>
+        </li>
+        <li role="menuitem">
+          <a href="/FAQ.html" class="FAQ-link">About Us</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <main id="main">
+    <section class="row-1" aria-labelledby="welcome-heading">
+      <div class="hero-container">
+        <div class="intro-text">
+          <h1>Välkommen till <br /><span class="highlight">Pho-Qing Around!</span></h1>
+          <p>En plats som är både välkomnande och traditionell!</p>
+          <p>Pho-get om dina bekymmer, det är dags för en skål av lycka!</p>
+          <a href="/Meny.html" class="cta-button">Utforska vår meny</a>
+        </div>
+        <div class="hero-image-wrapper">
+          <img class="hero-img" src="https://storage.googleapis.com/a1aa/image/44cdc532-6803-4178-a8d6-748b7bbd179a.jpeg"
+            alt="A bowl of Pho" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2" aria-labelledby="explore-pho-heading">
+      <div class="section-2-container">
+        <div class="section-2-left">
+          <a href="/Meny.html">
+            <img class="meny-img" src="https://chopchop.se/_next/image?url=%2Fimages%2Fhomepage%2Fmeny3.png&w=1920&q=75"
+              alt="Delicious Pho" />
+          </a>
+        </div>
+        <div class="section-2-right">
+          <h2 id="explore-pho-heading">Utforska vår läckra Pho</h2>
+          <p>Vår Pho är skapad med omsorg, med de finaste ingredienserna för att säkerställa en oförglömlig upplevelse.
+          </p>
+          <p>Oavsett om du är en fan av det traditionella eller föredrar något unikt, har vi något för alla.</p>
+          <a href="/Meny.html" class="cta-button">Se menyn</a>
+          <a href="/FAQ.html" class="contact-button">Kontakta Oss</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dynamic-slider" aria-labelledby="special-dishes-heading">
+      <h2 id="special-dishes-heading" style="text-align:center; font-family: Arial, sans-serif; font-size: 3rem; padding-bottom: 1rem;">Special
+        Dishes of the Week!</h2>
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="https://www.marionskitchen.com/wp-content/uploads/2021/09/Bun-Bo-Hue8635.jpg" alt="Bún bò Huế">
+          <div class="caption">Bún bò Huế</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Summer_roll.jpg/640px-Summer_roll.jpg"
+            alt="Gỏi cuốn">
+          <div class="caption">Gỏi cuốn</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Banh_Cuon_VN.jpg" alt="Bánh cuốn">
+          <div class="caption">Bánh cuốn</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Cha_ca_la_vong.jpg/800px-Cha_ca_la_vong.jpg" alt="Cha ca La Vong">
+          <div class="caption">Cha ca La Vong</div>
+        </div>
+
+        <!-- Next and Previous Buttons beside Thumbnails -->
+        <div class="row">
+          <a class="prev thumbnail-prev" onclick="plusSlides(-1)" aria-label="Previous slide">❮</a>
+          <div class="column"><img class="demo"
+              src="https://www.marionskitchen.com/wp-content/uploads/2021/09/Bun-Bo-Hue8635.jpg" onclick="currentSlide(1)"
+              alt="Bún bò Huế"></div>
+          <div class="column"><img class="demo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Summer_roll.jpg/640px-Summer_roll.jpg"
+              onclick="currentSlide(2)" alt="Gỏi cuốn"></div>
+          <div class="column"><img class="demo"
+              src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Banh_Cuon_VN.jpg" onclick="currentSlide(3)"
+              alt="Bánh cuốn"></div>
+          <div class="column"><img class="demo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Cha_ca_la_vong.jpg/800px-Cha_ca_la_vong.jpg"
+              onclick="currentSlide(4)" alt="Cha ca La Vong"></div>
+          <a class="next thumbnail-next" onclick="plusSlides(1)" aria-label="Next slide">❯</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-info">
+        <p>&copy; 2024 Pho-Qing Around. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/FAQ.html">Contact us</a>
+        <a href="/Meny.html">Menu</a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="Home.js"></script>
+</body>
+
+</html>

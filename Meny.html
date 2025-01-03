@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Utility.css">
+  <link rel="stylesheet" href="Meny.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pho-Qing Menu - Authentic Vietnamese Cuisine in Gothenburg</title>
+  <meta name="description" content="Explore the menu at Pho-Qing Around, a Vietnamese restaurant in Gothenburg. Discover our delicious dishes including Pho, Bánh xèo, Bánh mì, and Bubble Tea.">
+  <link rel="canonical" href="https://www.phoqingaround.se/Meny.html">
+</head>
+
+<body>
+  <header>
+    <nav class="main-nav" aria-label="main navigation">
+      <div class="container">
+        <a href="/Home.html" aria-label="Homepage">
+          <p>Pho-Qing Around</p>
+        </a>
+        <button class="menu-btn" aria-controls="main-menu" aria-expanded="false" aria-label="toggle navigation">
+          <img src="/images/icons/hamburger.svg" alt="Menu icon">
+        </button>
+
+        <ul id="main-menu" role="menu">
+          <li role="menuitem">
+            <a href="/Meny.html" class="meny-link">Meny</a>
+          </li>
+          <li role="menuitem">
+            <a href="/FAQ.html" class="FAQ-link">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="dynamic-slider" aria-labelledby="menu-heading">
+      <h2 style="text-align:center; font-family: Arial, sans-serif; font-size: 3rem; padding-bottom: 1rem;">~ Menu ~</h2>
+
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="https://storage.googleapis.com/a1aa/image/c221354c-35a2-4321-aaa8-c77f51c398c3.jpeg" alt="A bowl of Pho">
+          <div class="caption">Pho</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img
+            src="https://theplanetd.com/images/Best-Vietnamese-Food-Banh-Xeo.jpg"
+            alt="Bánh xèo">
+          <div class="caption">Bánh xèo</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="https://www.allrecipes.com/thmb/XRO7XOwqZflluq97rtvzEftrNa0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-187342-Banh-Mi-4x3-22bee17c1dfe4817adefce0ff4c218d3.jpg" alt="Bánh mì">
+          <div class="caption">Bánh mì</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="https://storage.googleapis.com/a1aa/image/9588ff93-53b8-4ad3-87e8-f32ce3c03eae.jpeg" alt="Bubble Tea">
+          <div class="caption">Bubble Tea</div>
+        </div>
+
+        <!-- Next and Previous Buttons beside Thumbnails -->
+        <div class="row">
+          <a class="prev thumbnail-prev" onclick="plusSlides(-1)" aria-label="Previous slide">❮</a>
+          <div class="column"><img class="demo"
+              src="https://storage.googleapis.com/a1aa/image/c221354c-35a2-4321-aaa8-c77f51c398c3.jpeg" onclick="currentSlide(1)"
+              alt="Pho"></div>
+          <div class="column"><img class="demo"
+              src="https://theplanetd.com/images/Best-Vietnamese-Food-Banh-Xeo.jpg"
+              onclick="currentSlide(2)" alt="Bánh xèo"></div>
+          <div class="column"><img class="demo"
+              src="https://www.allrecipes.com/thmb/XRO7XOwqZflluq97rtvzEftrNa0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-187342-Banh-Mi-4x3-22bee17c1dfe4817adefce0ff4c218d3.jpg" onclick="currentSlide(3)"
+              alt="Bánh mì"></div>
+          <div class="column"><img class="demo"
+              src="https://storage.googleapis.com/a1aa/image/9588ff93-53b8-4ad3-87e8-f32ce3c03eae.jpeg"
+              onclick="currentSlide(4)" alt="Bubble Tea"></div>
+          <a class="next thumbnail-next" onclick="plusSlides(1)" aria-label="Next slide">❯</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="row-2" aria-labelledby="menu-details-heading">
+      <div class="container">
+        <div class="menu" id="menu-details-heading">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-info">
+        <p>&copy; 2024 Pho-Qing Around. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/FAQ.html">Contact us</a>
+        <a href="/Meny.html">Menu</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Meny.js"></script>
+</body>
+
+</html>

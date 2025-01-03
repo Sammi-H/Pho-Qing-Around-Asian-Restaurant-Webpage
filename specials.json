@@ -1,0 +1,74 @@
+[
+    {
+      "comment": "Pho, the only dish that can make you feel warm inside and challenge your chopstick skills at the same time!",
+      "name": "Pho",
+      "price": "150kr",
+      "image": "https://storage.googleapis.com/a1aa/image/c221354c-35a2-4321-aaa8-c77f51c398c3.jpeg",
+      "description": "An aromatic noodle soup with beef, chicken or tofu.",
+      "ingredients": [
+        "Rice noodles (bánh phở)",
+        "Beef or chicken (brisket, sirloin, or chicken breast)",
+        "Broth (made from beef/chicken bones, spices)",
+        "Onion",
+        "Ginger",
+        "Fresh herbs (basil, cilantro, mint)",
+        "Bean sprouts",
+        "Lime wedges",
+        "Sriracha or hoisin sauce",
+        "Green onions"
+      ]
+    },
+    {
+      "comment": "Why did the Bánh mì break up with the sandwich? Because it found someone who really understood its layers!",
+      "name": "Bánh mì",
+      "price": "145kr",
+      "image": "https://www.allrecipes.com/thmb/XRO7XOwqZflluq97rtvzEftrNa0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-187342-Banh-Mi-4x3-22bee17c1dfe4817adefce0ff4c218d3.jpg",
+      "description": "Vietnamese baguettes filled with grilled meat, pickled vegetables and creamy sauces.",
+      "ingredients": [
+        "Baguette",
+        "Grilled pork (or chicken, beef, tofu)",
+        "Pickled carrots and daikon",
+        "Cucumber slices",
+        "Fresh cilantro",
+        "Jalapeño or chili slices",
+        "Mayonnaise or pâté",
+        "Soy sauce or fish sauce"
+      ]
+    },
+    {
+      "comment": "Why did the Bánh Xèo break up with the spring roll? Because it found someone a little more 'crispy' with a 'sizzling' personality!",
+      "name": "Bánh xèo",
+      "price": "140kr",
+      "image": "https://theplanetd.com/images/Best-Vietnamese-Food-Banh-Xeo.jpg",
+      "description": "Crispy Vietnamese pancakes with fillings such as shrimp or pork.",
+      "ingredients": [
+        "Rice flour",
+        "Turmeric powder",
+        "Coconut milk",
+        "Shrimp",
+        "Pork (or other protein)",
+        "Bean sprouts",
+        "Green onions",
+        "Lettuce (for wrapping)",
+        "Fresh herbs (like mint and cilantro)",
+        "Fish sauce (for dipping)"
+      ]
+    },
+    {
+      "comment": "If bubble tea were a person, it would definitely be the fun friend who always brings the party with them!",
+      "name": "Bubble Tea",
+      "price": "40kr",
+      "image": "https://storage.googleapis.com/a1aa/image/9588ff93-53b8-4ad3-87e8-f32ce3c03eae.jpeg",
+      "description": "A refreshing and sweet drink with tapioca pearls in different flavors.",
+      "ingredients": [
+        "Brewed black or green tea",
+        "Tapioca pearls (boba)",
+        "Sweetened condensed milk",
+        "Sugar or simple syrup",
+        "Ice",
+        "Flavoring (e.g., fruit syrup, matcha, taro)",
+        "Milk or non-dairy creamer"
+      ]
+    }
+  ]
+  
